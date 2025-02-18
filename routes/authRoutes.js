@@ -1,6 +1,6 @@
 const express = require('express');
 const { register, login, sendResetLink, resetPassword, verifyCode, sendVerificationCode } = require('../controllers/authController');
-const authenticateToken = require('../middleware/authenticateToken'); 
+const authenticateToken = require('../middleware/AuthenticateToken'); 
 const router = express.Router();
 
 router.post('/register', register);
